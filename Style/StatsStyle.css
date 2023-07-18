@@ -1,3 +1,11 @@
+/* Title for the Patronage */
+.king {
+    color: #f5c644fa;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
 
 .articles-container {
     display: grid;
@@ -8,12 +16,7 @@
     /* Optional padding to create some spacing around the articles */
 }
 
-.left-article {
-    background-color: #f0f0f0;
-    /* Optional background color for the left article */
-    padding: 20px;
-    /* Optional padding to create some spacing around the content */
-}
+/* RIGHT SIDE : Logo */
 
 .right-article {
     background-color: #e0e0e0;
@@ -23,9 +26,48 @@
 }
 
 .right-article img {
-    width: 100%; /* Set the width to 100% of the parent container */
-    max-width: 320px; /* Set a maximum width for the image to control its size */
-    height: auto; /* Maintain the aspect ratio of the image */
-    display: block; /* Remove any default inline spacing */
-    margin: 0 auto; /* Center the image horizontally within the left article */
+    width: 100%;
+    /* Set the width to 100% of the parent container */
+    max-width: 320px;
+    /* Set a maximum width for the image to control its size */
+    height: auto;
+    /* Maintain the aspect ratio of the image */
+    display: block;
+    /* Remove any default inline spacing */
+    margin: 2 auto;
+    /* Center the image horizontally within the left article */
+}
+
+
+/* LEFT SIDE : Stats */
+.left-article-container {
+    display: flex; /* Use flexbox to align items in a row */
+}
+
+.left-article {
+    background-color: #f0f0f0;
+    /* Optional background color for the left article */
+    padding: 60px;
+    /* Optional padding to create some spacing around the content */
+    text-align: center;
+    margin-left: auto; /* Push the left article to the right */
   }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    text-align: center;
+  }
+  
+  .grid-item-center {
+    grid-column: 1 / 3; /* Span the first two columns */
+    text-align: center;
+    border: 1px solid #ccc; /* Add a border to test spacing */
+  }
+  
+  .grid-item {
+    text-align: center;
+    border: 1px solid #ccc; /* Add a border to test spacing */
+  }
+  
