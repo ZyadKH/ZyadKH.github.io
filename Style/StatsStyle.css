@@ -7,14 +7,76 @@
 /* LEFT SIDE */
 
 .left-article {
-    background-color: #f0f0f0;
+    background-color: black;
     /* Optional background color for the left article */
 }
 
 .stats-title {
     font-size: 30px;
     text-align: center;
+    color: white;
 }
+/*changes*/ 
+
+
+
+
+.Stats-Section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between; /* Space the items evenly within the row */
+    width: 500px; /* Set a fixed width for the row */
+    height: 200px; /* Set a fixed height for the row */
+}
+
+.item, .Edition {
+    flex: 1;
+    text-align: center;
+    border: 1px solid #ccc; /* You can adjust the border properties as needed */
+    aspect-ratio: 1; /* Make the boxes square with 1:1 aspect ratio */
+    max-width: 200px; /* Set a maximum width for the boxes */
+    max-height: 200px; /* Set a maximum height for the boxes */
+}
+
+.Edition {
+    margin-bottom: 10px; /* Add margin to separate it from the next row */
+}
+
+.item {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc; /* You can adjust the border properties as needed */
+    aspect-ratio: 1; /* Make the boxes square with 1:1 aspect ratio */
+    position: relative; /* Enable absolute positioning for the text elements */
+}
+
+
+
+.stats {
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+
+.description {
+    font-size: 18px;
+    text-align: center;
+    color: white;
+}
+
+
+
+
+
+
+
+/*changes*/ 
 
 /* RIGHT SIDE */
 
