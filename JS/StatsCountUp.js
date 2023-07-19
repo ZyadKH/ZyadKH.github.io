@@ -1,49 +1,71 @@
-// This function calculates the number of years since 1994
-function calculateYearsSince1994() {
-    const currentYear = new Date().getFullYear();
-    return currentYear - 1994;
-}
-
-// This function updates the 'data-final-value' attribute and the content of the element
-function updateStatsValue() {
-    const statsElement = document.querySelector('.stats');
-    const yearsSince1994 = calculateYearsSince1994();
-
-    statsElement.dataset.finalValue = yearsSince1994;
-    statsElement.textContent = yearsSince1994;
-}
-
-// Call the function to update the value on page load
-window.addEventListener('DOMContentLoaded', updateStatsValue);
-
-
-
-// countup.js
-function startSlowCountUp() {
-    const numElements = document.querySelectorAll('.stats');
-    const finalValues = Array.from(numElements).map((element) => parseFloat(element.dataset.finalValue));
-    const duration = 250000; // Total duration of the count-up in milliseconds (2,5 seconds)
-
-    const increments = finalValues.map((value) => value / (duration / 100));
-
-    function updateNumbers(timestamp) {
-        if (!start) start = timestamp;
-        const progress = timestamp - start;
-
-        for (let i = 0; i < finalValues.length; i++) {
-            const value = Math.min(finalValues[i], Math.floor(progress * increments[i]));
-            numElements[i].textContent = value;
-        }
-
-        if (progress < duration) {
-            requestAnimationFrame(updateNumbers);
-        }
+// Function to format the number with the European style (dot as thousand separator, comma as decimal separator)
+function formatNumberEuropeanStyle(number) {
+    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+  }
+  
+  // Function to animate the stats
+  function animateStats(element, targetValue, duration) {
+    const startValue = 0;
+    const increment = targetValue / (duration / 16); // Divide by 16 for smoother animation
+    let currentValue = startValue;
+  
+    const isSpecialNumber = element.classList.contains("special-number");
+  
+    function updateStats() {
+      currentValue += increment;
+  
+      let currentFormattedValue;
+      if (isSpecialNumber) {
+        currentFormattedValue =
+          formatNumberEuropeanStyle(currentValue.toFixed(1)).replace(".", ",");
+        // Add "M" to the formatted value
+        currentFormattedValue += " M";
+      } else {
+        currentFormattedValue = formatNumberEuropeanStyle(
+          Math.floor(currentValue)
+        );
+      }
+  
+      if (currentValue >= targetValue) {
+        element.textContent = isSpecialNumber
+          ? "2,7 M"
+          : formatNumberEuropeanStyle(Math.floor(targetValue));
+      } else {
+        element.textContent = currentFormattedValue;
+        requestAnimationFrame(updateStats);
+      }
     }
-
-    let start = null;
-    requestAnimationFrame(updateNumbers);
-}
-
-window.onload = function () {
-    startSlowCountUp();
-};
+  
+    requestAnimationFrame(updateStats);
+  }
+  
+  // Start the animation once when the element is in the viewport
+  function startAnimationOnceOnScroll(entries, observer) {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const statsElement = entry.target.querySelector(".stats");
+        const targetValue = statsElement.textContent.replace(/[^\d,.]/g, "");
+        animateStats(
+          statsElement,
+          parseFloat(targetValue.replace(",", ".")),
+          2000
+        );
+        observer.unobserve(entry.target);
+      }
+    });
+  }
+  
+  // Set up the Intersection Observer to trigger animation
+  const statsElements = document.querySelectorAll(".box");
+  const observerOptions = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.1,
+  };
+  
+  const statsObserver = new IntersectionObserver(
+    startAnimationOnceOnScroll,
+    observerOptions
+  );
+  statsElements.forEach((element) => statsObserver.observe(element));
+  
