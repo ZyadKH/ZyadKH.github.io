@@ -1,73 +1,115 @@
-/* Title for the Patronage */
-.king {
-    color: #f5c644fa;
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-}
-
+/*Splitting the whole segment in two side : left & right */
 
 .articles-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    /* Adjust this value to control the gap between articles */
-    padding: 20px;
-    /* Optional padding to create some spacing around the articles */
 }
 
-/* RIGHT SIDE : Logo */
+/* LEFT SIDE */
+
+.left-article {
+    background-color: black;
+}
+
+.stats-title {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    margin-left: 250px; /* Adjust the margin to move the stats section towards the right */
+
+}
+/*changes*/ 
+
+
+.Stats-Section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 250px; /* Adjust the margin to move the stats section towards the right */
+
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    height: 200px;
+}
+
+.item, .Edition {
+    flex: 1;
+    text-align: center;
+    max-width: 400px;
+    max-height: 200px;
+    position: relative; /* Enable absolute positioning for the text elements */
+    display: flex;
+    flex-direction: column; /* Display stats above description */
+    align-items: center;
+    justify-content: center;
+    margin-top: -80px; /* Adjust the margin to move items closer to the title */
+}
+
+
+.stats {
+    font-size: 65px;
+    text-align: center;     
+    color: white;
+    margin-bottom: 1px; /* Add margin between stat and description */
+}
+
+.description {
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    width: 170px; /* Adjust the width as needed */
+
+}
+
+.filler{ 
+    color: black;
+}
+
+
+/*changes*/ 
+
+/* RIGHT SIDE */
+
 
 .right-article {
-    background-color: #e0e0e0;
-    /* Optional background color for the right article */
-    padding: 20px;
-    /* Optional padding to create some spacing around the content */
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .right-article img {
-    width: 100%;
-    /* Set the width to 100% of the parent container */
-    max-width: 320px;
-    /* Set a maximum width for the image to control its size */
-    height: auto;
-    /* Maintain the aspect ratio of the image */
-    display: block;
-    /* Remove any default inline spacing */
-    margin: 2 auto;
-    /* Center the image horizontally within the left article */
+    width: 100%; /* Set the width to 100% of the parent container */
+    max-width: 420px; /* Set a maximum width for the image to control its size */
+    height: auto; /* Maintain the aspect ratio of the image */
+    display: block; /* Remove any default inline spacing */
+    margin-right: 160px; 
+    margin-top: 30px; /* Adjust the value to lower the image */
+    margin-bottom: 20px; 
+  }
+
+/*Button Styling*/ 
+
+/* Styles for the normal state */
+.button {
+    display: inline-block;
+    padding: 7px 30px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: black;
+    transition: all 0.3s ease; /* Adding a smooth transition effect */
+    margin-right: 160px;
+    margin-bottom: 10px;
 }
 
-
-/* LEFT SIDE : Stats */
-.left-article-container {
-    display: flex; /* Use flexbox to align items in a row */
+/* Styles for the hover state */
+.button:hover {
+    color: black;
+    border-color: black;
+    background-color: white;
 }
-
-.left-article {
-    background-color: #f0f0f0;
-    /* Optional background color for the left article */
-    padding: 60px;
-    /* Optional padding to create some spacing around the content */
-    text-align: center;
-    margin-left: auto; /* Push the left article to the right */
-  }
-  
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1px;
-    text-align: center;
-  }
-  
-  .grid-item-center {
-    grid-column: 1 / 3; /* Span the first two columns */
-    text-align: center;
-    border: 1px solid #ccc; /* Add a border to test spacing */
-  }
-  
-  .grid-item {
-    text-align: center;
-    border: 1px solid #ccc; /* Add a border to test spacing */
-  }
-  
