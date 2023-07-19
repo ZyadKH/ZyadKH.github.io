@@ -19,8 +19,6 @@
     background-color: black;
     font-family: 'Montserrat-ExtraLight';
 }
-
-/* the boxes */
 /* Style for the container div */
 .container {
     display: flex;
@@ -37,9 +35,13 @@
     margin: 1px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    /* Align content to the top */
+    justify-content: flex-start; /* Align content to the top */
     align-items: center;
+}
+
+/* Style for the merged box */
+.merged-box {
+    width: 60%; /* Adjust as needed to accommodate the merged box */
 }
 
 /* Style for each row */
