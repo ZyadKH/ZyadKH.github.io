@@ -1,13 +1,18 @@
-// Function to format the number with the European style (dot as thousand separator, comma as decimal separator)
-function formatNumberEuropeanStyle(number) {
-    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
-}
+//For the Number of editions 
 
 // Calculate the number of years since 1994
 function getYearsSince1994() {
     const currentYear = new Date().getFullYear();
     return currentYear - 1994;
 }
+
+//Formatting for the Visitors Number 
+
+// Function to format the number with the European style (dot as thousand separator, comma as decimal separator)
+function formatNumberEuropeanStyle(number) {
+    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+}
+
 
 
 // Function to animate the stats
@@ -46,7 +51,13 @@ function animateStats(element, targetValue, duration) {
     requestAnimationFrame(updateStats);
 }
 
-// Set up the Intersection Observer to trigger animation
+
+
+
+// The Animation Part
+
+
+// Set up the Intersection Observer to trigger animation for the Edition box
 document.addEventListener("DOMContentLoaded", function () {
     const statsElement = document.querySelector(".merged-box .stats");
     const targetValue = getYearsSince1994();
@@ -76,7 +87,7 @@ const observerOptions = {
     root: null,
     rootMargin: "0px",
     threshold: 0.1,
-};
+}; 0
 
 const statsObserver = new IntersectionObserver(
     startAnimationOnceOnScroll,
