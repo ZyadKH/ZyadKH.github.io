@@ -1,4 +1,4 @@
-
+/*Splitting the whole segment in two side : left & right */
 .articles-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -8,72 +8,65 @@
 
 .left-article {
     background-color: black;
-    /* Optional background color for the left article */
 }
 
 .stats-title {
     font-size: 30px;
     text-align: center;
     color: white;
+    margin-left: 250px; /* Adjust the margin to move the stats section towards the right */
+
 }
 /*changes*/ 
-
-
 
 
 .Stats-Section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: 250px; /* Adjust the margin to move the stats section towards the right */
+
 }
 
 .row {
     display: flex;
-    justify-content: space-between; /* Space the items evenly within the row */
-    width: 500px; /* Set a fixed width for the row */
-    height: 200px; /* Set a fixed height for the row */
+    justify-content: space-between;
+    width: 500px;
+    height: 200px;
 }
 
 .item, .Edition {
     flex: 1;
     text-align: center;
-    border: 1px solid #ccc; /* You can adjust the border properties as needed */
-    aspect-ratio: 1; /* Make the boxes square with 1:1 aspect ratio */
-    max-width: 200px; /* Set a maximum width for the boxes */
-    max-height: 200px; /* Set a maximum height for the boxes */
-}
-
-.Edition {
-    margin-bottom: 10px; /* Add margin to separate it from the next row */
-}
-
-.item {
-    flex: 1;
-    text-align: center;
-    padding: 20px;
-    border: 1px solid #ccc; /* You can adjust the border properties as needed */
-    aspect-ratio: 1; /* Make the boxes square with 1:1 aspect ratio */
+    max-width: 400px;
+    max-height: 200px;
     position: relative; /* Enable absolute positioning for the text elements */
+    display: flex;
+    flex-direction: column; /* Display stats above description */
+    align-items: center;
+    justify-content: center;
+    margin-top: -80px; /* Adjust the margin to move items closer to the title */
 }
-
 
 
 .stats {
-    font-size: 40px;
-    text-align: center;
+    font-size: 65px;
+    text-align: center;     
     color: white;
+    margin-bottom: 1px; /* Add margin between stat and description */
 }
 
 .description {
-    font-size: 18px;
+    font-size: 25px;
     text-align: center;
     color: white;
+    width: 170px; /* Adjust the width as needed */
+
 }
 
-
-
-
-
+.filler{ 
+    color: black;
+}
 
 
 /*changes*/ 

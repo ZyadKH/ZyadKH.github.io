@@ -22,7 +22,7 @@ window.addEventListener('DOMContentLoaded', updateStatsValue);
 function startSlowCountUp() {
     const numElements = document.querySelectorAll('.stats');
     const finalValues = Array.from(numElements).map((element) => parseFloat(element.dataset.finalValue));
-    const duration = 150000; // Total duration of the count-up in milliseconds (15 seconds)
+    const duration = 250000; // Total duration of the count-up in milliseconds (2,5 seconds)
 
     const increments = finalValues.map((value) => value / (duration / 100));
 
