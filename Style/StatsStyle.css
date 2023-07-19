@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./fonts/Montserrat-Black.ttf') format('truetype'),
+        url('./fonts/Montserrat-ExtraLight.ttf') format('truetype'),
+        url('./fonts/Montserrat-Bold.ttf') format('truetype');
+
+}
+
 /*Splitting the whole segment in two side : left & right */
 
 .articles-container {
@@ -9,47 +17,42 @@
 
 .left-article {
     background-color: black;
+    font-family: 'Montserrat-ExtraLight';
 }
 
-
-
-
-
-.Stats-Section {
+/* the boxes */
+/* Style for the container div */
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 250px;
-    /* Adjust the margin to move the stats section towards the right */
-
 }
 
+/* Style for each individual div */
+.box {
+    width: 30%;
+    height: 105px;
+    border: 1px solid #dfb7b7;
+    box-sizing: border-box;
+    margin: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* Align content to the top */
+    align-items: center;
+}
+
+/* Style for each row */
 .row {
     display: flex;
-    justify-content: space-between;
-    width: 500px;
-    height: 140px;
+    justify-content: right;
+    width: 100%;
 }
 
-.item,
-.Edition {
-    flex: 1;
-    text-align: center;
-    max-width: 400px;
-    max-height: 160px;
-    position: relative;
-    /* Enable absolute positioning for the text elements */
-    display: flex;
-    flex-direction: column;
-    /* Display stats above description */
-    align-items: center;
-    justify-content: center;
-    margin-top: -70px;
-    /* Adjust the margin to move items closer to the title */
+/* Remove margin from the <p> elements inside .box */
+.box p {
+    margin: 0;
 }
-
-
-
 
 
 /* All the Writing of the Left Side */
@@ -60,12 +63,10 @@
     color: white;
     margin-left: 250px;
     /* Adjust the margin to move the stats section towards the right */
-
 }
 
-
 .stats {
-    font-size: 63px;
+    font-size: 70px;
     text-align: center;
     color: white;
     margin-bottom: 1px;
@@ -73,16 +74,12 @@
 }
 
 .description {
-    font-size: 19px;
+    font-size: 14px;
     text-align: center;
     color: white;
     width: 170px;
     /* Adjust the width as needed */
 
-}
-
-.filler {
-    color: black;
 }
 
 
