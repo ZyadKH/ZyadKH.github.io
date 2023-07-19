@@ -13,7 +13,8 @@
     <!-- ------------------------------------------------- Style Sheets ------------------------------------------------- -->
     <link rel="stylesheet" href="./Style/homeStyle.css">
     <link rel="stylesheet" href="./Style/StatsStyle.css">
-   
+    <link rel="stylesheet" href="./Style/NavBarStyle.css">
+
 
 </head>
 
@@ -21,15 +22,23 @@
     <main>
 
         <!-- --------------------------------------------------- NAVBAR --------------------------------------------------- -->
+        <header>
+            <nav class="NavBar">
 
-        <nav id="NavBar" class="navbar">
-            <div class="navbar">
-                <a href="index.html" class="navbar-btn" id="home" data-id="home">HOME</a>
-                <a href="committee.html" class="navbar-btn" id="team" data-id="about">TEAM</a>
-                <a href="contact.html" class="navbar-btn" id="contact" data-id="contact">CONTACT</a>
-            </div>
-        </nav>
+                <div class="NavBarLogo">
+                    <img src="./images/logoNavBarFull.png" alt="Logo Forum EMI-ENTREPRISES">
+                </div>
 
+                <div class="NavBarElements">
+                    <a href="index.html"> HOME </a>
+                    <a href="committee.html"> LE COMITÉ </a>
+                    <a href="school.html"> L'ÉCOLE </a>
+                    <a href="services.html"> SERVICES </a>
+                    <a href="contact.html"> CONTACT </a>
+                </div>
+
+            </nav>
+        </header>
         <!-- --------------------------------------------------- LANDING PAGE --------------------------------------------------- -->
         <div id="videoContainer">
             <video id="PresentationVideo" autoplay playsinline muted loop>
@@ -40,20 +49,22 @@
                 <p> OSEZ L'EXPERTISE <br> OSEZ LE <span> FORUM EMI-ENTREPRISES </span> </p>
             </div>
         </div>
-        
+
         <!-- --------------------------------------------------- Stats--------------------------------------------------- -->
 
         <section>
 
-            <div class="king"> <p> SOUS LE HAUT PATRONAGE DE SA MAJESTÉ LE ROI MOHAMMED VI </p> </div>
-          
+            <div class="king">
+                <p> SOUS LE HAUT PATRONAGE DE SA MAJESTÉ LE ROI MOHAMMED VI </p>
+            </div>
+
             <div class="articles-container">
                 <article class="left-article">
 
                     <div class="stats-title">
                         <p> Le <strong>Forum EMI-Entreprises</strong> </p>
-                        <p> <strong>Plus grand</strong> Forum <br> 
-                            de type École-Entreprises au <br> 
+                        <p> <strong>Plus grand</strong> Forum <br>
+                            de type École-Entreprises au <br>
                             Maroc
                         </p>
                     </div>
@@ -63,44 +74,44 @@
                             <p class="stats" data-final-value="30">0</p>
                             <p class="description">Éditions</p>
                         </div>
-                    
+
                         <div class="row">
                             <div class="item">
                                 <p class="stats" data-final-value="135">0</p>
                                 <p class="description">Entreprises participantes</p>
                             </div>
-                    
+
                             <div class="item">
                                 <p class="stats" data-final-value="70">0</p>
                                 <p class="description">Partenaires médiatiques</p>
                             </div>
                         </div>
-                    
+
                         <div class="row">
                             <div class="item">
                                 <p class="stats" data-final-value="20000">0</p>
                                 <p class="description">Visiteurs <span class="filler"> --------------------</span></p>
                             </div>
-                    
+
                             <div class="item">
                                 <p class="stats" data-final-value="27000000">0</p>
                                 <p class="description">Dirhams de <br> chiffre d'affaires</p>
                             </div>
                         </div>
                     </div>
-                    
-                </div>
-
+                </article>
                 <article class="right-article">
 
                     <img id="logoright" src="./images/logoStatsWhite.png" alt="logo forum EMI Entreprises">
 
-                    <div class="button"> <p>En savoir plus</p> </div>
-                
+                    <div class="button">
+                        <p>En savoir plus</p>
+                    </div>
+
                 </article>
 
             </div>
-            
+
         </section>
 
         <!-- --------------------------------------------------- Stats--------------------------------------------------- -->
@@ -110,14 +121,15 @@
         </p>
 
 
-    <footer>
+        <footer>
 
-        <p>Forum EMI-Entreprises © 1994-<span id="currentYear"></span>. All rights Reserved.</p>
-        <script> document.getElementById("currentYear").textContent = new Date().getFullYear(); </script>
-    
-        <!-- ------------------------------------------------- JavaScript Sheets ------------------------------------------------- -->
-    
-        <script src="./JS/StatsCountUp.js""></script>
+            <p>Forum EMI-Entreprises © 1994-<span id="currentYear"></span>. All rights Reserved.</p>
+            <script> document.getElementById("currentYear").textContent = new Date().getFullYear(); </script>
+
+            <!-- ------------------------------------------------- JavaScript Sheets ------------------------------------------------- -->
+
+            <script src="./JS/StatsCountUp.js""></script>
+            <script src="./JS/NavBarFadeAway.js"></script>
 
     
     </footer>
