@@ -1,0 +1,51 @@
+[33mcommit b095c5c24f12b4644355e7f175e06033313a9946[m[33m ([m[1;36mHEAD -> [m[1;32mStats-Section-Done[m[33m, [m[1;31morigin/Stats-Section-Done[m[33m, [m[1;32mStats-Section-Done-Backup[m[33m)[m
+Merge: 7af1314 c9c4d33
+Author: Zyad Khalef <118022693+ZyadKH@users.noreply.github.com>
+Date:   Wed Jul 19 19:49:05 2023 +0200
+
+    Merge branch 'Stats-Section-Done' of https://github.com/zyadkh/Forum-EMI-Entreprises-Website into Stats-Section-Done
+
+[33mcommit 7af1314d6f33a8060471f2ff24abf630d52240a8[m
+Author: Zyad Khalef <118022693+ZyadKH@users.noreply.github.com>
+Date:   Wed Jul 19 19:48:34 2023 +0200
+
+    Making the Stats smaller to fit well
+
+[33mcommit c9c4d33c30032dec5848479611e83799ea13597e[m
+Merge: 3d636c7 aca48de
+Author: Zyad Khalef <118022693+ZyadKH@users.noreply.github.com>
+Date:   Wed Jul 19 15:28:46 2023 +0200
+
+    Merge branch 'main' into Stats-Section-Done
+
+[33mcommit 3d636c7275217b3c562ac82afecaecb448c78277[m[33m ([m[1;31morigin/CheckPoint1[m[33m, [m[1;32mCheckPoint1[m[33m)[m
+Author: Zyad Khalef <118022693+ZyadKH@users.noreply.github.com>
+Date:   Wed Jul 19 12:20:13 2023 +0200
+
+    Stats Section is Done, only need tto fix the 2,7 M
+    value
+
+[33mcommit a0c2111af9aa4871bf3d5aebf3d42c93ba4a48eb[m[33m ([m[1;31morigin/Left-Side[m[33m, [m[1;32mLeft-Side[m[33m)[m
+Author: Zyad Khalef <118022693+ZyadKH@users.noreply.github.com>
+Date:   Tue Jul 18 21:36:20 2023 +0200
+
+    The Left Side is almost done, just need to fix the
+    size of the content
+
+[33mcommit fd2c971b300f57ab04111ba05370c1cf59c8acad[m[33m ([m[1;31morigin/trial1[m[33m, [m[1;31morigin/Right-Side[m[33m, [m[1;32mtrial1[m[33m, [m[1;32mRight-Side[m[33m)[m
+Author: Zyad Khalef <118022693+ZyadKH@users.noreply.github.com>
+Date:   Tue Jul 18 19:52:33 2023 +0200
+
+    Right Side Stats Done
+
+[33mcommit aca48de463d43bcd31cd61d2884c4072205b1e4e[m
+Author: Zyad Khalef <118022693+ZyadKH@users.noreply.github.com>
+Date:   Tue Jul 18 14:48:22 2023 +0200
+
+    Adjusting left article
+
+[33mcommit 35c24dbde87b817805da8022ffc31258ccdc8d6e[m[33m ([m[1;31morigin/trial[m[33m)[m
+Author: Zyad Khalef <118022693+ZyadKH@users.noreply.github.com>
+Date:   Tue Jul 18 13:12:44 2023 +0200
+
+    The First Commit
