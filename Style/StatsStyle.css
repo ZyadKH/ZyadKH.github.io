@@ -10,21 +10,16 @@
     background-color: black;
 }
 
-.stats-title {
-    font-size: 30px;
-    text-align: center;
-    color: white;
-    margin-left: 250px; /* Adjust the margin to move the stats section towards the right */
 
-}
-/*changes*/ 
+
 
 
 .Stats-Section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 250px; /* Adjust the margin to move the stats section towards the right */
+    margin-left: 250px;
+    /* Adjust the margin to move the stats section towards the right */
 
 }
 
@@ -32,44 +27,64 @@
     display: flex;
     justify-content: space-between;
     width: 500px;
-    height: 200px;
+    height: 140px;
 }
 
-.item, .Edition {
+.item,
+.Edition {
     flex: 1;
     text-align: center;
     max-width: 400px;
-    max-height: 200px;
-    position: relative; /* Enable absolute positioning for the text elements */
+    max-height: 160px;
+    position: relative;
+    /* Enable absolute positioning for the text elements */
     display: flex;
-    flex-direction: column; /* Display stats above description */
+    flex-direction: column;
+    /* Display stats above description */
     align-items: center;
     justify-content: center;
-    margin-top: -80px; /* Adjust the margin to move items closer to the title */
+    margin-top: -70px;
+    /* Adjust the margin to move items closer to the title */
+}
+
+
+
+
+
+/* All the Writing of the Left Side */
+
+.stats-title {
+    font-size: 26px;
+    text-align: center;
+    color: white;
+    margin-left: 250px;
+    /* Adjust the margin to move the stats section towards the right */
+
 }
 
 
 .stats {
-    font-size: 65px;
-    text-align: center;     
+    font-size: 63px;
+    text-align: center;
     color: white;
-    margin-bottom: 1px; /* Add margin between stat and description */
+    margin-bottom: 1px;
+    /* Add margin between stat and description */
 }
 
 .description {
-    font-size: 25px;
+    font-size: 19px;
     text-align: center;
     color: white;
-    width: 170px; /* Adjust the width as needed */
+    width: 170px;
+    /* Adjust the width as needed */
 
 }
 
-.filler{ 
+.filler {
     color: black;
 }
 
 
-/*changes*/ 
 
 /* RIGHT SIDE */
 
@@ -81,16 +96,21 @@
 }
 
 .right-article img {
-    width: 100%; /* Set the width to 100% of the parent container */
-    max-width: 420px; /* Set a maximum width for the image to control its size */
-    height: auto; /* Maintain the aspect ratio of the image */
-    display: block; /* Remove any default inline spacing */
-    margin-right: 160px; 
-    margin-top: 30px; /* Adjust the value to lower the image */
-    margin-bottom: 20px; 
-  }
+    width: 100%;
+    /* Set the width to 100% of the parent container */
+    max-width: 320px;
+    /* Set a maximum width for the image to control its size */
+    height: auto;
+    /* Maintain the aspect ratio of the image */
+    display: block;
+    /* Remove any default inline spacing */
+    margin-right: 160px;
+    margin-top: 30px;
+    /* Adjust the value to lower the image */
+    margin-bottom: 20px;
+}
 
-/*Button Styling*/ 
+/*Button Styling*/
 
 /* Styles for the normal state */
 .button {
@@ -100,7 +120,8 @@
     border: 2px solid white;
     border-radius: 20px;
     background-color: black;
-    transition: all 0.3s ease; /* Adding a smooth transition effect */
+    transition: all 0.3s ease;
+    /* Adding a smooth transition effect */
     margin-right: 160px;
     margin-bottom: 10px;
 }
