@@ -1,0 +1,73 @@
+/* Remove default list styles */
+.NavBar {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style the navigation bar */
+.NavBar {
+    background-color: #000000;
+    /* Choose your desired background color */
+    display: flex;
+    /* Use flexbox to align elements */
+    justify-content: space-between;
+    /* Space elements evenly across the container */
+    align-items: center;
+    /* Vertically center the elements */
+    position: fixed;
+    /* Keep the navigation bar fixed at the top */
+    top: 0;
+    /* Position the navigation bar at the top of the viewport */
+    left: 0;
+    /* Align the navigation bar to the left of the viewport */
+    width: 100%;
+    /* Make the navigation bar occupy the full width */
+    z-index: 999;
+    /* Set a high z-index to make sure the navigation bar is on top */
+    opacity: 1;
+    /* Initially set opacity to 1 */
+    transition: opacity 0.5s;
+    /* Add a fade-out transition */
+}
+
+/* Style the logo */
+.NavBarLogo img {
+    width: 100px;
+    /* Set the width of your logo */
+    height: auto;
+    /* Automatically adjust height based on width */
+    margin-left: 90px;
+    /* Push the logo further to the right by adding margin */
+}
+
+
+/* Style the navigation links */
+.NavBarElements a {
+    display: inline-block;
+    /* Display the links horizontally */
+    padding: 15px 20px;
+    /* Add padding to create clickable area */
+    color: #555555;
+    /* Choose text color for the links */
+    text-decoration: none;
+    /* Remove underline from links */
+    margin-right: 10px;
+    /* Add right margin to create spacing between elements */
+    font-size: 23px;
+    /* Set the font size to 25 pixels (adjust as needed) */
+    transition: color 0.8s;
+    /* Add slow-motion effect to color change (0.5 seconds) */
+}
+
+/* Add hover effect for the links */
+.NavBarElements a:hover {
+    color: #ffffff;
+    /* Choose a color for the hover effect */
+}
+
+/* Add a class to apply fade-out effect */
+.NavBar.fade-out {
+    opacity: 0;
+    /* Set opacity to 0 to make it fade out */
+}
