@@ -1,10 +1,9 @@
-@font-face {
-    font-family: 'Montserrat';
-    src: url('./fonts/Montserrat-Black.ttf') format('truetype'),
-        url('./fonts/Montserrat-ExtraLight.ttf') format('truetype'),
-        url('./fonts/Montserrat-Bold.ttf') format('truetype');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap'); /* Poppins Thin 100 */
 
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap'); /* Montserrat Thin 100 */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@100&display=swap'); /* Noto Serif Thin 100  */
+
 
 /*Splitting the whole segment in two side : left & right */
 
@@ -17,7 +16,6 @@
 
 .left-article {
     background-color: black;
-    font-family: 'Montserrat-ExtraLight';
 }
 
 /* Style for the container div */
@@ -33,7 +31,7 @@
     height: 105px;
     border: 1px solid #dfb7b7;
     box-sizing: border-box;
-    margin: 1px;
+    margin: 2px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -68,6 +66,7 @@
     color: white;
     margin-left: 250px;
     /* Adjust the margin to move the stats section towards the right */
+    font-family: 'Poppins', sans-serif;
 }
 
 .stats {
@@ -76,15 +75,16 @@
     color: white;
     margin-bottom: 1px;
     /* Add margin between stat and description */
+    font-family: 'Montserrat', sans-serif;
 }
 
 .description {
-    font-size: 14px;
+    font-size: 13px;
     text-align: center;
     color: white;
     width: 170px;
     /* Adjust the width as needed */
-
+    font-family: 'Noto Serif', serif;
 }
 
 
@@ -128,6 +128,7 @@
     /* Adding a smooth transition effect */
     margin-right: 160px;
     margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Styles for the hover state */

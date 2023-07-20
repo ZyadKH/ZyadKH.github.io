@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap'); /* Playfair Display Regular 400 */
 
 
 body,
@@ -8,5 +7,5 @@ html {
     padding: 0;
     overflow-x: hidden;
     background-color: black;
-    font-family: 'Playfair Display', serif;
+    /*font-family: 'Playfair Display', serif;*/
 }

@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap'); /* Playfair Display Regular 400 */
+
+
 #videoContainer {
     position: relative;
     width: 100vw;
@@ -34,6 +37,7 @@
     left: 45%;
     transform: translate(-50%, -50%);
     text-align: left;
+    font-family: 'Playfair Display', serif;
 }
 
 #PresentationVideoTextOverlay p {
@@ -41,7 +45,8 @@
     font-size: 50px;
     font-weight: normal;
     line-height: 1.2;
-    white-space: nowrap; /* Prevent the text from wrapping */
+    white-space: nowrap;
+    /* Prevent the text from wrapping */
 }
 
 #PresentationVideoTextOverlay span {
