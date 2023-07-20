@@ -11,13 +11,20 @@
     <link rel="icon" type="image/png" href="./images/ForumIcon.jpg" sizes="16x16">
 
     <!-- ------------------------------------------------- Style Sheets ------------------------------------------------- -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css'>
+    <link rel="stylesheet" href="./Style/TimeLineStyle.css">
+
+
     <link rel="stylesheet" href="./Style/WholePage.css">
     <link rel="stylesheet" href="./Style/NavBarStyle.css">
     <link rel="stylesheet" href="./Style/PresVideoStyle.css">
     <link rel="stylesheet" href="./Style/PatronageStyle.css">
     <link rel="stylesheet" href="./Style/StatsStyle.css">
-    <link rel="stylesheet" href="./Style/GlorySection.css">
     <link rel="stylesheet" href="./Style/footerStyle.css">
+
+
 
 </head>
 
@@ -74,7 +81,7 @@
                         </p>
                     </div>
 
-                    <div class="container">
+                    <div class="stats-container">
                         <div class="row">
                             <div class="box merged-box">
                                 <p class="stats">20</p>
@@ -118,11 +125,79 @@
 
         </section>
 
-        <!-- --------------------------------------------------- Next Section--------------------------------------------------- -->
+        <!-- --------------------------------------------------- Time Line --------------------------------------------------- -->
+        <div class="timeline-container">
+            <h1 class="container-title">UN PASSÉ GLORIEUX...<br>
+                <strong>UN AVENIR PLUS RADIEUX</strong>
+            </h1>
+            <div class="timeline">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=11)"
+                            data-year="1994">
+                            <div class="swiper-slide-content"><span class="timeline-year">1994</span>
+                                <h4 class="timeline-title"> CRÉATION DU FORUM EMI-ENTREPRISES </h4>
+                                <p class="timeline-text"> Création du premier Forum de type école-entreprises au Maroc
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=12)"
+                            data-year="1999">
+                            <div class="swiper-slide-content"><span class="timeline-year">1999</span>
+                                <h4 class="timeline-title">HAUT PATRONAGE DE SA MAJESTÉ LE ROI MOHAMMED VI</h4>
+                                <p class="timeline-text">Le Forum EMI-Entreprises devient le premier Forum à avoir
+                                    bénéficier du Haut Patronage Royal </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=14)"
+                            data-year="2019">
+                            <div class="swiper-slide-content"><span class="timeline-year">2019</span>
+                                <h4 class="timeline-title">L'ÉDITION QUART DU SIÈCLE</h4>
+                                <p class="timeline-text">La 25ème édition du Forum EMI-Entreprises fût un grand succès
+                                    avec plus de 100 entreprises participantes, plus de 70 partenaires médiatiques et
+                                    plus de 12000 visiteurs</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=13)"
+                            data-year="2021">
+                            <div class="swiper-slide-content"><span class="timeline-year">2021</span>
+                                <h4 class="timeline-title">PREMIÈRE ÉDITION VIRTUELLE</h4>
+                                <p class="timeline-text">Première édition totalement digitale en partenariat avec la
+                                    plateforme Seekube.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=15)"
+                            data-year="2015">
+                            <div class="swiper-slide-content"><span class="timeline-year">2015</span>
+                                <h4 class="timeline-title">Our nice super title</h4>
+                                <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do
+                                    eisumod tempor
+                                    incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud
+                                    exercitation ullamco
+                                    laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=16)"
+                            data-year="2016">
+                            <div class="swiper-slide-content"><span class="timeline-year">2016</span>
+                                <h4 class="timeline-title">Our nice super title</h4>
+                                <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do
+                                    eisumod tempor
+                                    incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud
+                                    exercitation ullamco
+                                    laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
 
-        <p class="title-AdGloriam">UN PASSÉ GLORIEUX<br>
-            <strong>UN FUTUR PLUS RADIEUX</strong>
-        </p>
+        <!-- ------------------------------------------------- Next Part ------------------------------------------------- -->
+
 
 
         <footer>
@@ -134,7 +209,11 @@
 
             <script src="./JS/StatsCountUp.js""></script>
             <script src=" ./JS/NavBarFadeAway.js"></script>
-            <script src="./JS/PatronageGolden.js"></script>
+
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js'></script>
+            <script src="./JS/TimeLineSwiper.js"></script>
+
+
 
 
         </footer>

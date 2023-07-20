@@ -1,8 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap'); /* Poppins Thin 100 */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+/* Poppins Thin 100 */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap'); /* Montserrat Thin 100 */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+/* Montserrat Thin 100 */
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@100&display=swap'); /* Noto Serif Thin 100  */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@100&display=swap');
+/* Noto Serif Thin 100  */
 
 
 /*Splitting the whole segment in two side : left & right */
@@ -19,7 +22,7 @@
 }
 
 /* Style for the container div */
-.container {
+.stats-container {
     display: flex;
     flex-direction: column;
     align-items: center;
