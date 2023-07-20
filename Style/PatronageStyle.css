@@ -1,17 +1,11 @@
-@font-face {
-    font-family: 'LibreBaskerville';
-    src: url('./fonts/LibreBaskerville-Regular.ttf') format('truetype'),
-         url('./fonts/LibreBaskerville-Bold.ttf') format('truetype'),
-         url('./fonts/LibreBaskerville-Italic.ttf') format('truetype');
-
-}
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 
 .king {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 30px;
-    font-family: 'LibreBaskerville', sans-serif;
+    font-family: 'Libre Baskerville', serif;
     font-weight: bold;
     text-transform: uppercase;
     color: rgb(245, 189, 46);
