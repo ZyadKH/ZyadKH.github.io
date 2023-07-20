@@ -6,6 +6,7 @@
   font-size: 55px;
   text-align: center;
   /* To center-align the text */
+  font-family: 'quark-light', sans-serif;
 }
 
 .timeline-container {
