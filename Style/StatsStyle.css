@@ -13,6 +13,7 @@
 .articles-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 50px;
 }
 
 /* LEFT SIDE */
@@ -119,7 +120,7 @@
 /*Button Styling*/
 
 /* Styles for the normal state */
-.button {
+.stats-button {
     display: inline-block;
     padding: 7px 30px;
     color: white;
@@ -134,8 +135,22 @@
 }
 
 /* Styles for the hover state */
-.button:hover {
+.stats-button:hover {
     color: black;
     border-color: black;
     background-color: white;
+}
+
+.stats-button a {
+    color: #ffffff;
+    /* Change the color to your desired text color */
+    text-decoration: none;
+    /* Remove underlining */
+}
+
+.stats-button:hover a {
+    color: black;
+    /* Change the text color to black on hover */
+    font-weight: bold;
+    /* Set the font weight to bold on hover */
 }
