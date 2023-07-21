@@ -44,6 +44,7 @@
 
 /* Style the navigation links */
 .NavBarElements a {
+    outline: none;
     display: inline-block;
     /* Display the links horizontally */
     padding: 15px 20px;
@@ -58,7 +59,7 @@
     /* Set the font size to 25 pixels (adjust as needed) */
     transition: color 0.8s;
     /* Add slow-motion effect to color change (0.5 seconds) */
-    font-family: 'quark-light', sans-serif;
+    font-family: 'Times New Roman', sans-serif;
 }
 
 /* Add hover effect for the links */

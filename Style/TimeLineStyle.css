@@ -3,10 +3,10 @@
   /* To make the text white */
   font-weight: bold;
   /* To make the text bold */
-  font-size: 55px;
-  text-align: center;
+  font-size: 50px;
+  text-align: left;
   /* To center-align the text */
-  font-family: 'quark-light', sans-serif;
+  font-family: 'Playfair Display', sans-serif;
 }
 
 .timeline-container {

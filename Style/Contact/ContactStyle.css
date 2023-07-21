@@ -1,18 +1,16 @@
 html, body {
-  overflow: hidden; /* Prevent scroll bars */
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
   padding: 0;
   background-color: #000;
-  padding-bottom: 100px;
 }
 
 #contact {
   width: 100%;
   height: 100%;
-  padding-top: 30px; 
 }
 
 .section-header {
@@ -30,7 +28,6 @@ body {
   flex-direction: row;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 20px;
   position: relative;
   max-width: 840px;
 }

@@ -32,9 +32,8 @@
 .box {
     width: 30%;
     height: 105px;
-    border: 1px solid #dfb7b7;
     box-sizing: border-box;
-    margin: 2px;
+    margin: 4px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

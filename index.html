@@ -18,7 +18,7 @@
 
 
     <!-- ------------------------------------------------- Fonts ------------------------------------------------- -->
-    
+
     <link href="https://www.dafontfree.net/embed/cXVhcmstbGlnaHQmZGF0YS80Ni9xLzU5ODQxL1F1YXJrLUxpZ2h0Lm90Zg"
         rel="stylesheet" type="text/css" />
 
@@ -41,21 +41,20 @@
         <!-- --------------------------------------------------- NAVBAR --------------------------------------------------- -->
         <header>
             <nav class="NavBar">
-
-                <div class="NavBarLogo">
+                <a href="index.html" class="NavBarLogo">
                     <img src="./images/logoNavBarFull.png" alt="Logo Forum EMI-ENTREPRISES">
-                </div>
-
+                </a>
+    
                 <div class="NavBarElements">
-                    <a href="index.html"> HOME </a>
+                    <a href="#stats-section" id="forum-link"> LE FORUM </a>
                     <a href="committee.html"> LE COMITÉ </a>
                     <a href="school.html"> L'ÉCOLE </a>
                     <a href="services.html"> SERVICES </a>
                     <a href="contact.html"> CONTACT </a>
                 </div>
-
             </nav>
         </header>
+
         <!-- --------------------------------------------------- LANDING PAGE --------------------------------------------------- -->
         <div id="videoContainer">
             <video id="PresentationVideo" autoplay playsinline muted loop>
@@ -71,7 +70,7 @@
 
         <!-- --------------------------------------------------- Stats--------------------------------------------------- -->
 
-        <section>
+        <section id="stats-section">
 
             <div class="king">
                 <p id="glow-text"> SOUS LE HAUT PATRONAGE DE SA MAJESTÉ LE ROI MOHAMMED VI </p>
@@ -84,7 +83,7 @@
                         <p> Le <strong>Forum EMI-Entreprises</strong> </p>
                         <p> <strong>Plus grand</strong> Forum <br>
                             de type École-Entreprises au <br>
-                            Maroc
+                            <strong> Maroc </strong>
                         </p>
                     </div>
 
@@ -134,7 +133,7 @@
 
         <!-- --------------------------------------------------- Time Line --------------------------------------------------- -->
         <div class="timeline-container">
-            <h1 class="container-title">UN PASSÉ GLORIEUX...<br>
+            <h1 class="container-title"> UN PASSÉ GLORIEUX ...<br>
                 <strong>UN AVENIR PLUS RADIEUX</strong>
             </h1>
             <div class="timeline">
@@ -173,28 +172,6 @@
                                     plateforme Seekube.</p>
                             </div>
                         </div>
-                        <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=15)"
-                            data-year="2015">
-                            <div class="swiper-slide-content"><span class="timeline-year">2015</span>
-                                <h4 class="timeline-title">Our nice super title</h4>
-                                <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do
-                                    eisumod tempor
-                                    incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud
-                                    exercitation ullamco
-                                    laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=16)"
-                            data-year="2016">
-                            <div class="swiper-slide-content"><span class="timeline-year">2016</span>
-                                <h4 class="timeline-title">Our nice super title</h4>
-                                <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do
-                                    eisumod tempor
-                                    incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud
-                                    exercitation ullamco
-                                    laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            </div>
-                        </div>
                     </div>
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
@@ -216,12 +193,12 @@
 
             <script src="./JS/StatsCountUp.js""></script>
             <script src=" ./JS/NavBarFadeAway.js"></script>
+            <script src="./JS/ForumSectionSlide.js"></script>
+
+            <!-- -------------------------------------------------  Swiper ------------------------------------------------- -->
 
             <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js'></script>
             <script src="./JS/TimeLineSwiper.js"></script>
-
-
-
 
         </footer>
 
