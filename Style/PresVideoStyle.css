@@ -29,6 +29,11 @@
     /* This allows clicks to go through the overlay to the video/text below */
 }
 
+/* Hide Picture-in-Picture toggle button */
+video::-webkit-media-controls-enclosure {
+    display: none !important;
+}
+
 
 
 #PresentationVideoTextOverlay {
